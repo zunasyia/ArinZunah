@@ -19,7 +19,7 @@ tab1, tab2 = st.tabs(["📊 Dashboard", "📋 Data Table"])
 with tab2:
 
 # import data
-    df = pd.read_csv(r"C:\Users\User\Downloads\sales_data.csv")
+    df = pd.read_csv("sales_data.csv")
 
 # clean data
     df = df.drop(['Region', 'Unit_Cost', 'Customer_Type', 'Payment_Method', 'Sales_Channel', 'Region_and_Sales_Rep'], axis=1)
